@@ -5,7 +5,7 @@
   FoodBox
 </h1>
 
-<h4 align="center">FoodBox is a smart cat feeder. Developed in 2016 for the cumulative Internet-of-Things project during Grade 12 AP Computer Science.</h4>
+<h4 align="center">FoodBox is a smart cat feeder.<br>Developed in 2016 for the cumulative Internet-of-Things project during Grade 12 AP Computer Science.</h4>
 
 <p align="center">
   <a href="#key-features">Description</a> •
@@ -27,14 +27,15 @@ The software component of our AP Computer Science IoT project. Features GUI deve
 
 ## Screenshots
 
-![screenshot](https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.08.20%20AM.png)
+![main page screenshot](https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.08.20%20AM.png)
 > Main page. Click the big button to feed your cat, time since last feeding displayed underneath
 
 
-![screenshot](https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.09.52%20AM.png)
+![timers page screenshot](https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.09.52%20AM.png)
 > Timers page. Create, edit, and delete timers (scheduled feedings).
 
-![screenshot](https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.10.02%20AM.png)
+<img src="https://raw.githubusercontent.com/qjack001/Food-Box/master/screenshots/Screen%20Shot%202019-01-14%20at%205.10.02%20AM.png" alt="Dialog box screenshot" width="400">
+
 > Example of material design dialog boxes
 
 ## How to Use

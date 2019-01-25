@@ -6,11 +6,13 @@ import java.awt.event.ActionEvent;
 import javax.swing.border.*;
 import java.util.ArrayList;
 
-/*
- * to add:
- *  >send request when button click
- *  >make timer save to file
- *  >all the other screens
+/**
+ *  Graphical User Interface Object
+ *
+ *  Main GUI for the FoodBox app. Built in Swing.
+ *
+ *  @author Jack Guinane
+ *  @version 1.4
  */
 
 public class F4GUI
@@ -20,15 +22,16 @@ public class F4GUI
         new Color(30,136,229), //light blue
         new Color(21,101,192), //dark blue
         new Color(250,250,250)}; //off-white
-    private final int WIDTH = 660, HEIGHT = 460;
+    private final int WIDTH = 660, HEIGHT = 460; //size of window
     
-    private AlarmList alarmList;
-    private JLabel time;
-    private final String RES_PATH = "/Resources/";
+    private AlarmList alarmList; //list of alarms
+    private JLabel time; //time since last fed
+    private final String RES_PATH = "/Resources/"; //path to image assets & storage
     
     
-    /*
-     *  constructor, but you already knew that 
+    /**
+     *  constructor
+     *  creates new window
      */
     public F4GUI()
     {
@@ -40,8 +43,9 @@ public class F4GUI
         gotoPage(feedPage());
     }
 
-    /*
-     *  go to a specific page
+    /**
+     * changes GUI window to desired page
+     * @param page [description]
      */
     private void gotoPage(Container page)
     {
@@ -50,21 +54,23 @@ public class F4GUI
         frame.setVisible(true);
     }
     
-    /*
-     *  calculates time
+    /**
+     * time getter
+     * @return String of current time
      */
     private String getTime()
     {
         long now = System.currentTimeMillis();
-        //long sec = (now - Long.parseLong(ReadWrite.read(RES_PATH + "settings.txt").get(1))) / 1000;
-        //long hour = (sec / 60) / 60;
-        //long min = (sec / 60) % 60;
-        String out = "4";//String.format("%02d:%02d",hour,min);
+        long sec = (now - Long.parseLong(ReadWrite.read(RES_PATH + "settings.txt").get(1))) / 1000;
+        long hour = (sec / 60) / 60;
+        long min = (sec / 60) % 60;
+        String out = String.format("%02d:%02d",hour,min);
         return out;
     }
 
-    /*
-     *  returns shadow component
+    /**
+     * creates drop shadow
+     * @return Container of a shadow image
      */
     private Container shadow()
     {
@@ -78,8 +84,10 @@ public class F4GUI
         return sPage;
     }
     
-    /*
-     *  returns toolBar
+    /**
+     * creates sidebar
+     * @param  selected current page
+     * @return          Container containing the menu
      */
     private Container toolBar(int selected)
     {
@@ -211,7 +219,6 @@ public class F4GUI
         return page;
     }
     
-    
     private Container addAlarm(final int i)
     {
         final JPanel page = new JPanel();
@@ -288,8 +295,9 @@ public class F4GUI
         return page;
     }
 
-    /*
-     *  feed manually page
+    /**
+     * creates main page
+     * @return Container of page
      */
     private Container feedPage()
     {
@@ -366,8 +374,9 @@ public class F4GUI
         return mainPage;
     }
     
-    /*
-     *  set timers page
+    /**
+     * creates timers page
+     * @return Container of page
      */
     private Container timersPage()
     {
@@ -437,8 +446,10 @@ public class F4GUI
         return mainPage;
     }
     
-    /*
-     *  get data page
+    /**
+     * creates data page
+     * not complete, will contain statistics on use
+     * @return Container of page
      */
     private Container dataPage()
     {
@@ -461,8 +472,10 @@ public class F4GUI
         return page;
     }
     
-    /*
-     *  adjust settings page
+    /**
+     * creates settings page
+     * not yet complete, will allow user to adjust app settings
+     * @return Container of page
      */
     private Container settingsPage()
     {

@@ -6,12 +6,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/***************************************
- *  Jack Guinane                       *
- *  2015-10-22                         *
- *  -------                            *
- *  Reads and writes files             *
- ***************************************/
+/**
+ *  Read/Write Helper
+ *
+ *  Simple utility class to read and write from file.
+ *  Specifically designed to be used with the Alarm object.
+ *
+ *  @author Jack Guinane
+ *  @version 1.0
+ *  @created 2015-10-22
+ */
 
 public class ReadWrite
 {

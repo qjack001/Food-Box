@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionListener;
@@ -7,21 +6,41 @@ import javax.swing.border.*;
 import java.util.ArrayList;
 import java.awt.event.WindowEvent;
 
+/**
+ *  Material Design Dialog Box
+ *
+ *  A Swing dialog box styled to look like a material design dialog box. 
+ *
+ *  @author Jack Guinane
+ *  @version 1.0
+ */
+
 public class Dialog
 {
     private static DragFrame dialog;
     private static String inputValue;
     
+    /**
+     * universal option values
+     */
     public static final String YES = "$yes";
     public static final String NO = "$no";
     public static final String CANCEL = "$cancel";
     public static final String OK = "$ok";
 
+    /*
+     * for testing
+     */
     public static void main(String[] args)
     {
         System.out.println(showNewAlarm(new JFrame()));
     }
     
+    /**
+     * displays a new dialog box, prompting the user to input a time
+     * @param  parent main JFrame window
+     * @return        inputed time
+     */
     public static String showNewAlarm(JFrame parent) 
     {
         dialog = new DragFrame(parent, true);
@@ -132,6 +151,13 @@ public class Dialog
         return inputValue;
     }
     
+    /**
+     * displays dialog, prompting the user to confirm
+     * @param  parent  main JFrame window
+     * @param  title   name of dialog window
+     * @param  message custom message (confirm or cancel)
+     * @return         user's selection
+     */
     public static String showConfirm(JFrame parent, String title, String message) 
     {
         dialog = new DragFrame(parent, true);

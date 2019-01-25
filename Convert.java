@@ -1,21 +1,21 @@
 
 /**
- *   ___  ___   ___  __ __    
- *    ||  /\\  //  ' ||_/    [Jack Guinane] 
- *  \_|/ /--\\ \\__/ || \\,  [DATE]
- *   ___, __  _ ____ __  _  ___  __  _ ____,
- *  // __ ||  |  ||  ||\ |  /\\  ||\ | ||_ '
- *  \\__/ \\__/ _||_ || \| /--\\ || \| ||__,
- *  
- *  Description goes here.
- *  -----
- *  Things to fix: bugs go here.
- *  -----
- *  Add methods and how-to to this comment.  
+ *  Format Converting Object
+ *
+ *  Extremely simple helper class to convert decimal into 34-base.
+ *  Thus allowing the entire ascii range to be used, saving space.
+ *
+ *  @author Jack Guinane, Quinn Smith
+ *  @version 1.0
  */
 
 public class Convert
 {
+    /**
+     * converts time (base-10) to ascii (base-34)
+     * @param  num input (base-10)
+     * @return     String containing converted ascii
+     */
     public static String timeToAscii(int num)
     {
         char out;
@@ -23,6 +23,11 @@ public class Convert
         return "" + out;
     }
     
+    /**
+     * converts ascii (base-34) to time (base-10)
+     * @param  String   input (base-34)
+     * @return          int base-10
+     */
     public static int asciiToTime(String num)
     {
         int out;

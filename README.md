@@ -17,7 +17,7 @@
 
 ## Description
 
-The software component of our AP Computer Science IoT project. Features GUI developed with Java's Swing framework, made to mimic the appearence of a material design application. Users are able to immediatly feed their cat using the large "feed" button, or schedule times of day for the feeder to automatically feed their cat. Comunicates with Arduino over the Serial port. When instructed to feed, the Arduino spins a servo motor, rotating a wood cylinder 90 degrees. A hole drilled through the wood allows food to pour out in one position, while blocking food in the other.
+The software component of our AP Computer Science IoT project. Features a GUI developed with Java's Swing framework, made to mimic the appearence of a material design application. Users are able to immediatly feed their cat using the large "feed" button, or schedule times of day for the feeder to automatically feed their cat. Comunicates with Arduino over the Serial port. When instructed to feed, the Arduino spins a servo motor, rotating a wood cylinder 90 degrees. A hole drilled through the wood allows food to pour out in one position, while blocking food in the other.
 
 ## Key Features
 

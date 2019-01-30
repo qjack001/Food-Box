@@ -8,9 +8,9 @@
 <h4 align="center">FoodBox is a smart cat feeder.<br>Developed in 2016 for the cumulative Internet-of-Things project during Grade 12 AP Computer Science.</h4>
 
 <p align="center">
-  <a href="#key-features">Description</a> •
+  <a href="#description">Description</a> •
   <a href="#key-features">Key Features</a> •
-  <a href="#key-features">Screenshots</a> •
+  <a href="#screenshots">Screenshots</a> •
   <a href="#how-to-use">How to Use</a> •
   <a href="#authors">Authors</a>
 </p> 

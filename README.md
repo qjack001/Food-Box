@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://qjack001.github.io/Web-Based-Windows/"><img src="https://raw.githubusercontent.com/qjack001/Food-Box/master/Resources/github-logo.png" alt="Food Box Logo" width="100"></a>
+  <img src="https://raw.githubusercontent.com/qjack001/Food-Box/master/Resources/github-logo.png" alt="Food Box Logo" width="100">
   <br>
   FoodBox
 </h1>

@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/qjack001/Food-Box/master/Resources/github-logo.png" alt="Food Box Logo" width="100">
+  <img src="/Resources/github-logo.png" alt="Food Box Logo" width="100">
   <br>
   FoodBox
 </h1>
